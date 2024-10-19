@@ -1,7 +1,6 @@
 .nav-bar {
   background: #181818;
   width: 100%;
-  position: absolute;
   height: 60px;
   top: 0;
   z-index: 3;
@@ -24,12 +23,11 @@
   }
 
   nav {
-    display: flex;
-    justify-content: center;
+    display: flex; /* Keep this as flex */
     align-items: center;
     height: 100%;
-    width: auto;
     text-align: center;
+    margin-right: auto; /* Align buttons to the left */
 
     a {
       font-size: 22px;
@@ -66,7 +64,6 @@
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
-        bottom: -10px; /* Adjust positioning so it's right under the button */
         display: block;
         width: 100%;
         text-align: center;
@@ -95,15 +92,15 @@
   }
 
   ul {
-    position: absolute;
+    position: relative; /* Change to relative if necessary */
     bottom: 20px;
-    width: 100%;
     display: flex;
     justify-content: center;
     padding: 0;
     margin: 0;
     list-style: none;
     text-align: center;
+    margin-left: auto; /* Push the list to the far right */
 
     li a {
       padding: 7px 0;
